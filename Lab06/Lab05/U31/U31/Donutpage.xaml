@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="U31.Donutpage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:U31"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Background="Red">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Image Source="https://healthyfitnessmeals.com/wp-content/uploads/2018/06/instagram-In-Stream_Square___banana-protein-donuts-3.jpg" Width="150" Margin="20,20,0,0"></Image>
+        <TextBlock Grid.Row="1" FontSize="18" Text="Original Glazed Cpunt:" Foreground="WHite" Margin="20,20,20,0"></TextBlock>
+        <Slider Grid.Row="1" Grid.Column="1" Maximum="24" Margin="20,20,20,0"></Slider>
+        <TextBlock Grid.Row="2" FontSize="18" Text="Speedway Specital Count:" Foreground="White" Margin="20,20,20,0"></TextBlock>
+        <Slider Grid.Row="2" Grid.Column="1" Maximum="24" Margin="20,20,20,0"></Slider>
+    </Grid>
+</Page>

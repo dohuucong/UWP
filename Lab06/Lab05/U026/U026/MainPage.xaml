@@ -1,0 +1,35 @@
+﻿<Page
+    x:Class="U026.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:U026"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <ScrollViewer HorizontalScrollMode="Auto" VerticalScrollBarVisibility="Auto">
+            <Image Source="Assets/LockScreenLogo.scale-200.png" Height="800" Stretch="None"></Image>
+        </ScrollViewer>
+        <StackPanel Grid.Row="1" Grid.Column="0">
+            <ScrollViewer HorizontalScrollMode="Auto" VerticalScrollBarVisibility="Auto">
+                <Image Source="Assets/LockScreenLogo.scale-200.png" Height="800" Stretch="None"></Image>
+            </ScrollViewer>
+        </StackPanel>
+        <ScrollViewer Grid.Row="1" Grid.Column="1"  HorizontalScrollMode="Auto" VerticalScrollBarVisibility="Auto">
+            <StackPanel>
+                <Image Source="Assets/LockScreenLogo.scale-200.png" Height="800" Stretch="None"></Image>
+                <Image Source="Assets/LockScreenLogo.scale-200.png" Height="800" Stretch="None"></Image>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>

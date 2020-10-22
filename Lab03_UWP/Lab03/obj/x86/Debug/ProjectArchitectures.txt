@@ -1,0 +1,1 @@
+F:\UWP\Lab03\Lab03\Lab03.csproj;x86

@@ -1,0 +1,1 @@
+E:\CSharp\UniversalWindowns\App1\App1.csproj;x86

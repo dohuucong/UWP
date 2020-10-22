@@ -1,0 +1,86 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\ThiDK\\Documents\\Aptech\\ACCP 2018\\SEM3\\SEM3\\1. UWP\\Demo UWP\\UWP-024\\UWP-024\\HamburgerHeavenChallenge\\HamburgerHeavenChallenge\\HamburgerHeavenChallenge.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\ThiDK\\Documents\\Aptech\\ACCP 2018\\SEM3\\SEM3\\1. UWP\\Demo UWP\\UWP-024\\UWP-024\\HamburgerHeavenChallenge\\HamburgerHeavenChallenge\\HamburgerHeavenChallenge.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ThiDK\\Documents\\Aptech\\ACCP 2018\\SEM3\\SEM3\\1. UWP\\Demo UWP\\UWP-024\\UWP-024\\HamburgerHeavenChallenge\\HamburgerHeavenChallenge\\HamburgerHeavenChallenge.csproj",
+        "projectName": "HamburgerHeavenChallenge",
+        "projectPath": "C:\\Users\\ThiDK\\Documents\\Aptech\\ACCP 2018\\SEM3\\SEM3\\1. UWP\\Demo UWP\\UWP-024\\UWP-024\\HamburgerHeavenChallenge\\HamburgerHeavenChallenge\\HamburgerHeavenChallenge.csproj",
+        "packagesPath": "C:\\Users\\ThiDK\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ThiDK\\Documents\\Aptech\\ACCP 2018\\SEM3\\SEM3\\1. UWP\\Demo UWP\\UWP-024\\UWP-024\\HamburgerHeavenChallenge\\HamburgerHeavenChallenge\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\ThiDK\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "uap10.0.19041"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "uap10.0.19041": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "uap10.0.19041": {
+          "dependencies": {
+            "Microsoft.ApplicationInsights": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "Microsoft.ApplicationInsights.PersistenceChannel": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "Microsoft.ApplicationInsights.WindowsApps": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "Microsoft.NETCore.UniversalWindowsPlatform": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      },
+      "runtimes": {
+        "win10-arm": {
+          "#import": []
+        },
+        "win10-arm-aot": {
+          "#import": []
+        },
+        "win10-x64": {
+          "#import": []
+        },
+        "win10-x64-aot": {
+          "#import": []
+        },
+        "win10-x86": {
+          "#import": []
+        },
+        "win10-x86-aot": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

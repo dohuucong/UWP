@@ -1,0 +1,87 @@
+﻿<Page
+    x:Class="moneyApp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:moneyApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.Resources>
+        <Style TargetType="Button" x:Key="NavBttnStyle">
+            <Setter Property="Foreground" Value="Black"></Setter>
+            <Setter Property="Background" Value="White"></Setter>
+
+            <Setter Property="HorizontalAlignment" Value="Stretch"></Setter>
+            <Setter Property="VerticalAlignment" Value="Stretch"></Setter>
+            <Setter Property="BorderThickness" Value="0,0,2,0"></Setter>
+        </Style>
+        <Style TargetType="ListBox" x:Key="menu">
+            <Setter Property="Foreground" Value="Black"></Setter>
+            <Setter Property="Background" Value="White"></Setter>
+            <Setter Property="HorizontalAlignment" Value="Stretch"></Setter>
+            <Setter Property="VerticalAlignment" Value="Stretch"></Setter>
+            <Setter Property="BorderThickness" Value="0,0,2,0"></Setter>
+        </Style>
+    </Page.Resources>
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width=".4*"></ColumnDefinition>
+            <ColumnDefinition Width="9.6*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        
+        <!--Row2-->
+        <SplitView Grid.Column="0" 
+                   Name="MySplitView"
+                   DisplayMode="CompactOverlay" 
+                   OpenPaneLength="100" 
+                   CompactPaneLength="100">
+            <SplitView.Pane>
+                <ListBox SelectionMode="Single" 
+                   Style="{StaticResource menu}"
+
+                         SelectionChanged="ListBox_SelectionChanged">
+                    <ListBoxItem Name="menu">
+                        <StackPanel Orientation="Horizontal">
+                            <Button Name="HamburgerButton" 
+                                    Style="{StaticResource NavBttnStyle}"
+                                    FontFamily="Segoe MDL2 Assets"
+                                    FontSize="36" 
+                                    Content="&#xE700;" 
+                                    Click="HamburgerButton_Click" />
+                            <!--<TextBlock FontSize="24" Margin="20,0,0,0">Financial</TextBlock>-->
+                        </StackPanel>
+                    </ListBoxItem>
+                    
+                    <ListBoxItem Name="Home">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="36" Text="&#xE80F;" />
+                            <!--<TextBlock FontSize="24" Margin="20,0,0,0">Financial</TextBlock>-->
+                        </StackPanel>
+                    </ListBoxItem>
+                    <ListBoxItem Name="Mark">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="36" Text="&#xE1CE;" />
+                            <!--<TextBlock FontSize="24" Margin="20,0,0,0">Food</TextBlock>-->
+                        </StackPanel>
+                    </ListBoxItem>
+                    <ListBoxItem Name="WatchList">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="36" Text="&#xE1CE;" />
+                            <!--<TextBlock FontSize="24" Margin="20,0,0,0">Food</TextBlock>-->
+                        </StackPanel>
+                    </ListBoxItem>
+                    <ListBoxItem Name="Food">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock FontFamily="Segoe MDL2 Assets" FontSize="36" Text="&#xE1CE;" />
+                            <!--<TextBlock FontSize="24" Margin="20,0,0,0">Food</TextBlock>-->
+                        </StackPanel>
+                    </ListBoxItem>
+                </ListBox>
+            </SplitView.Pane>
+
+        </SplitView>
+        <Frame Name="MyFrame" Grid.Column="1" Navigated="MyFrame_Navigated"></Frame>
+    </Grid>
+</Page>

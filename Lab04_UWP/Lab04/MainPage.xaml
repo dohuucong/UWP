@@ -1,0 +1,208 @@
+﻿<Page
+    x:Class="Lab04.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Lab04"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <!--<StackPanel Width="500" HorizontalAlignment="Left" Margin="20,0,0,0">
+        <Grid Margin="0,0,0,20">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="2*" />
+            </Grid.ColumnDefinitions>
+
+            <TextBlock FontSize="24">Title 1</TextBlock>
+
+            <TextBlock Grid.Row="1" Grid.Column="1" TextWrapping="Wrap">
+                Lorem ispum dolor sit amet, consectetur adipiscing elit. Us luctus, mi nec fermentum cogue, turpis nibh porttitor ex, sed commodo neque eros non libero. Donex mauris felis, malesuada nex consectetur et, pharetra in ante. Prasent nec hendrerit purus. Ut vel nunc id nisl volutporta. Cras in convallis ispum. Integer id sollicitudin ex. Ut sed iaculis nisl. Vestibulum sit amet neque nec eros interdum laoreet nex vitae justo. Maecenas Scelerisque
+            </TextBlock>
+            <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.Column="1">
+                <Rectangle Fill="Green" Width="100" Height="30" />
+                <Rectangle Fill="Black" Width="100" Height="30"/>
+                <Rectangle Fill="Red" Width="100" Height="30"/>
+            </StackPanel>
+        </Grid>
+        <Grid Margin="0,0,0,20">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="2*" />
+            </Grid.ColumnDefinitions>
+
+            <TextBlock FontSize="24">Title 2</TextBlock>
+
+            <TextBlock Grid.Row="1" Grid.Column="1" TextWrapping="Wrap">
+                Lorem ispum dolor sit amet, consectetur adipiscing elit. Us luctus, mi nec fermentum cogue, turpis nibh porttitor ex, sed commodo neque eros non libero. Donex mauris felis, malesuada nex consectetur et, pharetra in ante. Prasent nec hendrerit purus. Ut vel nunc id nisl volutporta. Cras in convallis ispum. Integer id sollicitudin ex. Ut sed iaculis nisl. Vestibulum sit amet neque nec eros interdum laoreet nex vitae justo. Maecenas Scelerisque
+            </TextBlock>
+            <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.Column="1">
+                <Rectangle Fill="Red" Width="100" Height="30" />
+                <Rectangle Fill="Black" Width="100" Height="30"/>
+                <Rectangle Fill="Blue" Width="100" Height="30"/>
+            </StackPanel>
+        </Grid>
+        <Grid Margin="0,0,0,20">
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="2*" />
+            </Grid.ColumnDefinitions>
+
+            <TextBlock FontSize="24">Title 3</TextBlock>
+
+            <TextBlock Grid.Row="1" Grid.Column="1" TextWrapping="Wrap">
+                Lorem ispum dolor sit amet, consectetur adipiscing elit. Us luctus, mi nec fermentum cogue, turpis nibh porttitor ex, sed commodo neque eros non libero. Donex mauris felis, malesuada nex consectetur et, pharetra in ante. Prasent nec hendrerit purus. Ut vel nunc id nisl volutporta. Cras in convallis ispum. Integer id sollicitudin ex. Ut sed iaculis nisl. Vestibulum sit amet neque nec eros interdum laoreet nex vitae justo. Maecenas Scelerisque
+            </TextBlock>
+            <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.Column="1">
+                <Rectangle Fill="Blue" Width="100" Height="30" />
+                <Rectangle Fill="Black" Width="100" Height="30"/>
+                <Rectangle Fill="Yellow" Width="100" Height="30"/>
+            </StackPanel>
+        </Grid>
+    </StackPanel>-->
+    
+    <!--<Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+
+        </Grid.RowDefinitions>
+        <RelativePanel>
+            <Button Name="SearchButton" Content="Search"
+                    RelativePanel.AlignRightWithPanel="True"
+                    Margin="0,0,10,0" />
+            <TextBox Name="SearchTextBox"
+                     RelativePanel.LeftOf="SearchButton"
+                     Width="100"
+                     Margin="0,0,10,0" />
+            <TextBlock Text="Search:" RelativePanel.LeftOf="SearchTextBox" RelativePanel.AlignVerticalCenterWithPanel="True"></TextBlock>
+            <TextBlock Text="title:" FontSize="24" FontWeight="Bold" Margin="10, 0, 0, 0"></TextBlock>
+        </RelativePanel>
+    </Grid>-->
+
+    <!--<Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="1*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <RelativePanel MinHeight="300" Grid.Row="1" >
+            <Rectangle Name="BlueRectangle"
+                       Fill="Blue"
+                       Width="50" Height="50"
+                       RelativePanel.LeftOf="RedRectangle" />
+            <Rectangle Name="RedRectangle"
+                       Fill="Red"
+                       Width="100" Height="100"
+                       RelativePanel.AlignRightWithPanel="True" />
+
+            <Rectangle Name="greenRectangle"
+                       Fill="green"
+                       Width="50" Height="50"
+                       RelativePanel.AlignVerticalCenterWith="RedRectangle"
+                       RelativePanel.AlignHorizontalCenterWithPanel ="true" />
+            <Rectangle Name="YellowRectangle"
+                       Fill="Yellow"
+                       MinWidth="50" MinHeight="50"
+                       RelativePanel.AlignBottomWithPanel="True"
+                   RelativePanel.AlignTopWith="PurpleRectangle"
+                   />
+            <Rectangle Name="PurpleRectangle"
+                       Fill="Purple"
+                       MinWidth="50" MinHeight="50"
+                   RelativePanel.Below="RedRectangle"
+                       RelativePanel.AlignRightWith="RedRectangle"
+                   RelativePanel.AlignLeftWith="greenRectangle"
+                   />
+        </RelativePanel>
+    </Grid>-->
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBlock Text ="CheckBox" VerticalAlignment="Center" />
+        <StackPanel Grid.Column ="1" Margin="20, 10, 0, 10" Orientation="Horizontal">
+            <CheckBox Name="MyCheckBox"
+                      Content="Agree?" Tapped="MyCheckBox_Tapped" />
+            <TextBlock Name="CheckBoxResulttextBlock" />
+        </StackPanel>
+        <TextBlock Grid.Row="2" Text="RadioButton" VerticalAlignment="Center" />
+        <StackPanel Grid.Row="2" Grid.Column="1" Orientation="Horizontal" Margin="20,10,0,10">
+            <RadioButton Name="YesRadioButton" Content="Yes" GroupName="MyGroup" Checked="RadioButton_Checked" />
+
+            <RadioButton Name="NoRadioButton" Content="No" GroupName="MyGroup" Checked="RadioButton_Checked"></RadioButton>
+            <TextBlock Name="RadioButtonTextBlock"></TextBlock>
+        </StackPanel>
+
+        <TextBlock  Grid.Row="3" Text ="ComboBox" VerticalAlignment="Center" Name="MyComboBox" />
+        <StackPanel Grid.Column ="1" Grid.Row="3" Margin="20, 10, 0, 10" Orientation="Horizontal">
+            <ComboBox SelectionChanged="ComBox_SelectionChanged">
+                <ComboBoxItem Content="Fourth"></ComboBoxItem>
+                <ComboBoxItem Content="Firth"></ComboBoxItem>
+                <ComboBoxItem Content="Sixth"></ComboBoxItem>
+            </ComboBox>
+            <TextBlock Name="ComboBoxResulttextBlock"></TextBlock>
+
+        </StackPanel>
+        <TextBlock Grid.Row="4" Text="ListBox" VerticalAlignment="Center"></TextBlock>
+        <StackPanel Grid.Row="4" Grid.Column="1" Margin="20,10,0,10">
+            <ListBox Name="MyListBox" SelectionMode="Multiple" SelectionChanged="ListBox_SelectionChanged">
+                <ListBoxItem Content="First"></ListBoxItem>
+                <ListBoxItem Content="Second"></ListBoxItem>
+                <ListBoxItem Content="third"></ListBoxItem>
+            </ListBox>
+            <TextBlock Name="ListoxResultTextBlock"></TextBlock>
+        </StackPanel>
+
+        <TextBlock Grid.Row="5" Text="Image" VerticalAlignment="Center" />
+        <Image Source="Assets/logo.png"
+               HorizontalAlignment="Left"
+               Width="250" Height="50" Grid.Row="5" Grid.Column="1" Stretch="UniformToFill" Margin="20,10,0,10" />
+        <TextBlock Grid.Row="7" Text="ToggleButton" VerticalAlignment="Center"></TextBlock>
+        <StackPanel Orientation="Horizontal" Grid.Row="7" Grid.Column="1" Margin="20,10,0,10">
+            <ToggleButton Name="MyButtonToggle" Content="Premium Option" IsThreeState="True" Click="MytoggleButton_Click"></ToggleButton>
+            <TextBlock Name="ToggleButtonResultTextBlock"></TextBlock>
+        </StackPanel>
+        <TextBlock Grid.Row="8" Text="ToggleSwitch" VerticalAlignment="Center"/>
+        <StackPanel Grid.Row="8" Grid.Column="1" Margin="20,10,0,10">
+            <ToggleSwitch>
+                <ToggleSwitch.OffContent>
+                    <TextBlock Text="I'm Off right now"></TextBlock>
+                </ToggleSwitch.OffContent>
+                <ToggleSwitch.OnContent>
+                    <TextBlock Text="I'm On"></TextBlock>
+                </ToggleSwitch.OnContent>
+            </ToggleSwitch>
+        </StackPanel>
+    </Grid>
+</Page>
